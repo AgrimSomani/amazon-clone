@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 html,
 body {
   padding: 0;
@@ -27,4 +29,12 @@ a {
     color: white;
     background: black;
   }
+}
+
+.card{
+  @apply mb-5 rounded-lg border border-gray-200 shadow-md block pb-5;
+}
+
+.primary-button{
+  @apply rounded my-5 bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500
 }
