@@ -34,7 +34,7 @@ const Layout = ({children,title}) => {
                 <main className='container m-auto mt-4 px-4'>
                     {children}
                 </main>
-                <footer className='flex justify-center items-center shadow-inner h-10'>
+                <footer className='flex justify-center items-center shadow-inner h-10 mt-5'>
                     Copyright 2022 Amazon   
                 </footer>
             </div>

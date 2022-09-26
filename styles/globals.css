@@ -32,7 +32,7 @@ a {
 }
 
 .card{
-  @apply mb-5 rounded-lg border border-gray-200 shadow-md block pb-5;
+  @apply rounded-lg border border-gray-200 shadow-md;
 }
 
 .primary-button{

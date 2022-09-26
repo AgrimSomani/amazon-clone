@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 import data from '../../utils/data';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -21,6 +21,7 @@ const ProductScreen = () => {
             return
         }
         dispatch({type:'CART_ADD_ITEM',payload:{...product,quantity}})
+        Router.push('/cart')
     }
     if (!product){
         return (
@@ -38,12 +39,12 @@ const ProductScreen = () => {
                     <Image
                         src={product.image}
                         alt ={product.name}
-                        layout='responsive'
                         width = {640}
-                        height={640}
+                        height= {640}
+                        layout='responsive'
                     />
                 </div>
-                <div>
+                <div className='p-5'>
                     <ul>
                         <li>
                             <h1 className='text-lg'>{product.name}</h1>
